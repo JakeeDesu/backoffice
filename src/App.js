@@ -118,7 +118,7 @@ function App() {
     <div className="relative flex flex-col items-center justify-start w-full py-4 h-screen overflow-hidden">
       {!ready && <div className="absolute w-full h-full bg-slate-800/75"></div>}
       <img
-        className="absolute top-0 left-0 object-contain"
+        className="absolute top-0 left-0 object-contain opacity-100"
         src="/flowers.webp"
         />
       <div className='relative  h-24'>
@@ -138,11 +138,19 @@ function App() {
             ))}
 
         </div>
-        <div className='relative w-4/12 h-full flex flex-col justify-start items-center p-4 bg-slate-50 border-2 border-slate-100 rounded-sm'>
-          <button
-            className='bg-green-300 p-4 rounded-lg hover:bg-green-400'
-            onMouseDown={e => onAddClick(e)}  
-            >new card</button>
+        <div className='relative w-4/12 h-full flex flex-col justify-start items-center bg-slate-50/50 rounded-3xl border-2 border-gray-900'>
+          <div className="relative w-full h-1/6 flex justify-center items-center ">
+            <div className="absolute -top-1/2 left-0 flex justify-center items-center  w-full h-5/6 bg-rd-600">
+              <button
+                className=" w-14 h-14 rounded-full bg-green-100 hover:bg-green-500 border-2 border-gray-900 text-gray-500 text-2xl font-black"
+                onMouseDown={e => onAddClick(e)}  
+              >+</button>
+
+            </div>
+          </div>
+          <div className="w-full h-5/6 flex bg-gren-600">
+
+          </div>
         </div>
 
       </div>

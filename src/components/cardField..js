@@ -4,11 +4,11 @@ const CardField = ({ key_name, values, onEdit, onSubmit}) => {
     const ValItems = ({value, onEdit}) => {
         if (!onEdit)
             return (
-                <div  className='px-1 mx-2 hover:border-b-2 hover:border-blue-200 runded-lg bg-bue-200 flex items-center whitespace-nowrap'>{value}</div>
+                <div  className='px-1 mx-2 hover:rounded-md hover:bg-blue-200 runded-lg bg-bue-200 flex items-center whitespace-nowrap'>{value}</div>
             )
         else
             return (
-                <input className='px-1 mx-2 hover:border-b-2 hover:border-blue-200 runded-lg bg-bue-200 flex items-center '></input>
+                <input className='px-1 mx-2 hover:rounded-md hover:bg-blue-200 runded-lg bg-bue-200 flex items-center '></input>
             )
     }
 

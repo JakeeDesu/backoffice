@@ -12,7 +12,7 @@ const Card = ({ Id, Question, Answers, RightAnswers, onDeleteClick}) => {
     }
 
     return (
-        <div className=' cursor-pointer flex flex-col justify-start items-between w-auto h-auto m-4 rounded-3xl border-2 border-gray-400 bg-gray-50/50 hover:shadow-xl shadow-2xl hover:shadow-yellow-600/10 shadow-yellow-600/5'>
+        <div className=' cursor-pointer flex flex-col justify-start items-between w-auto h-auto m-4 rounded-3xl border-2 border-gray-500 bg-white/50 hover:shadow-xl shadow-2xl hover:shadow-yellow-600/10 shadow-yellow-600/5'>
             <CardField
                 key_name="Question"
                 values={[Question]}
@@ -28,7 +28,7 @@ const Card = ({ Id, Question, Answers, RightAnswers, onDeleteClick}) => {
                 values={RightAnswers}
                 onEdit={onEditMode}
             />
-            <div className="flex flex-row w-full bg-re-200 p-2">
+            <div className="flex flex-row w-full bg-re-200 p-2 ">
                 <div className="flex flex-1 justify-around items-center bg-re-400"></div>
                 <div className="flex flex-1 justify-around items-center bg-yelow-400">
                     <button 
